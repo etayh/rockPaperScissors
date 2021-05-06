@@ -1,50 +1,12 @@
 <!DOCTYPE html>
 <head>
     <title>Rock Paper Scissors!</title>
-    <link rel="script" href="script.js">
 </head>
 <header>
 
 </header>
 <body>
-        <script>
-            //computerPlay function completed, generates the computer's random choice
-            let selection = ["rock", "paper", "scissors"]
-            let playerScore = 0;
-            let computerScore = 0;
-
-            let computerSelection = Math.floor(Math.random() * selection.length);
-            
-            console.log(computerSelection, selection[computerSelection]);
-
-            // initial round of gameplay. Prompt records player's choice, then it is compared with computer's choice and output is given
-            // will need to rework in order to keep track of score
-            let playerSelection = prompt("Rock, Paper or Scissors? Choose Wisely!").toLowerCase();
-
-            function gameResult(playerSelection, computerSelection){
-                if ((playerSelection === "rock") && (computerSelection == 0)){
-                return "Draw! You both chose Rock";
-                } else if ((playerSelection === "rock") && (computerSelection == 1)){
-                return "You lose! Paper beats Rock";
-                } else if ((playerSelection === "rock") && (computerSelection == 2)){
-                return "You win! Rock beats Scissors";
-                } else if ((playerSelection === "paper") && (computerSelection == 0)){
-                return "You win! Paper beats Rock";
-                } else if ((playerSelection === "paper") && (computerSelection == 1)){
-                return "Draw! You both chose Paper";
-                } else if ((playerSelection === "paper") && (computerSelection == 2)){
-                return "You Lose! Scissors beats Paper";
-                } else if ((playerSelection === "scissors") && (computerSelection == 0)){
-                return "You lose! Rock beats Scissors";
-                } else if ((playerSelection === "scissors") && (computerSelection == 1)){
-                return "You win! Scissors beats Paper";
-                } else if ((playerSelection === "scissors") && (computerSelection == 2)){
-                return "Draw! You both chose Scissors";
-                }
-            }
-
-            console.log(gameResult(playerSelection, computerSelection));
-
+        <script src="script.js">
         </script>
 </body>
 </html>
